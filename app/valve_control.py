@@ -120,9 +120,13 @@ class ValveControlBase(serial.Serial):
 
     def stop(self):
         """Stop running cycles"""
-        res = self.send(b'\x07')[:4]
-        cycleCompleted = int.from_bytes(res, 'little')
-        return cycleCompleted
+        res = self.send(b'\x07')
+        cycleCompleted = int.from_bytes(res[:4], 'little')
+        temp = int.from_bytes(res[4:4+self.settings['REG_NUM']], 'big')
+        valveStates = []
+        for i in range(8*self.settings['REG_NUM']):
+            valveStates.append((temp >> i) & 1)
+        return cycleCompleted, valveStates
 
     def controlValves(self, on=(), off=()):
         """Control vlaves manually.

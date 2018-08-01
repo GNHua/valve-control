@@ -29,26 +29,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             styleSheet = f.read()
         self.setStyleSheet(styleSheet)
 
-        self.actionGroupSR = QtWidgets.QActionGroup(self.menuShift_Register)
-        for i in range(1, 7):
-            self.actionGroupSR.addAction(self.__dict__[f'actionSR{i}'])
-
-        self.toolButtonProgram.clicked.connect(self.uploadProgram)
-        self.pushButtonStart.clicked.connect(self.start)
-        self.pushButtonStop.clicked.connect(self.stop)
-        self.pushButtonLoadBuiltIn.clicked.connect(self.loadBuiltInProgram)
-        self.actionOpen.triggered.connect(self.uploadProgram)
-        self.actionClose.triggered.connect(self.close)
-        self.actionRestart_Device.triggered.connect(self.restartDevice)
-        self.actionTurn_Off_All.triggered.connect(self.clear)
-        self.actionStart.triggered.connect(self.start)
-        self.actionStop.triggered.connect(self.stop)
-        self.actionGroupSR.triggered.connect(self.changeSR)
-        self.actionReset_Input.triggered.connect(self.serialResetInput)
-        self.actionReset_Input.triggered.connect(self.serialResetOutput)
-        self.actionDocumentation.triggered.connect(self.openGithubRepo)
-        self.actionUpdate.triggered.connect(self.update)
-
         self.dir = APP_DIR
 
     def getUsbPort(self):
@@ -79,11 +59,33 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.__dict__[f'checkBoxValve{i}'] = checkBox
         self.__dict__[f'actionSR{regNum}'].setChecked(True)
         self.menuSerial.setTitle(f'Port: "{port}"')
+        self.connectUi()
 
     def addValveControl(self, i):
         def func(valveOn):
             self.device.controlSingleValve(i, valveOn)
         return func
+
+    def connectUi(self):
+        self.actionGroupSR = QtWidgets.QActionGroup(self.menuShift_Register)
+        for i in range(1, 7):
+            self.actionGroupSR.addAction(self.__dict__[f'actionSR{i}'])
+
+        self.toolButtonProgram.clicked.connect(self.uploadProgram)
+        self.pushButtonStart.clicked.connect(self.start)
+        self.pushButtonStop.clicked.connect(self.stop)
+        self.pushButtonLoadBuiltIn.clicked.connect(self.loadBuiltInProgram)
+        self.actionOpen.triggered.connect(self.uploadProgram)
+        self.actionClose.triggered.connect(self.close)
+        self.actionRestart_Device.triggered.connect(self.restartDevice)
+        self.actionTurn_Off_All.triggered.connect(self.clear)
+        self.actionStart.triggered.connect(self.start)
+        self.actionStop.triggered.connect(self.stop)
+        self.actionGroupSR.triggered.connect(self.changeSR)
+        self.actionReset_Input.triggered.connect(self.serialResetInput)
+        self.actionReset_Input.triggered.connect(self.serialResetOutput)
+        self.actionDocumentation.triggered.connect(self.openGithubRepo)
+        self.actionUpdate.triggered.connect(self.update)
 
     def uploadProgram(self):
         fn, _ = QtWidgets.QFileDialog.getOpenFileName(self, 'Open File', self.dir, 'text (*.txt)')
@@ -107,7 +109,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.device.start(cycles, phaseIntervalMillis)
 
     def stop(self):
-        self.device.stop()
+        cycleCompleted, valveStates = self.device.stop()
+        regNum = self.device.settings['REG_NUM']
+        for i in range(1, 8*regNum+1):
+            self.__dict__[f'checkBoxValve{i}'].blockSignals(True)
+            self.__dict__[f'checkBoxValve{i}'].setChecked(valveStates[i-1])
+            self.__dict__[f'checkBoxValve{i}'].blockSignals(False)
 
     def loadBuiltInProgram(self):
         valveNum = 8 * self.device.settings['REG_NUM']

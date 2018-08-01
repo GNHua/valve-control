@@ -154,6 +154,7 @@ void stop()
   runBeforeAfterPhase(afterPhase, totalAfterPhases);
 
   Serial.write((char*)(&currentCycle), sizeof(currentCycle));
+  Serial.write(currentState, regNum);
   Serial.println();
   currentCycle = 0;
 }
