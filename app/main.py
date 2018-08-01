@@ -152,6 +152,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def clear(self):
         self.device.clearShiftRegister()
+        regNum = self.device.settings['REG_NUM']
+        for i in range(1, 8*regNum+1):
+            self.__dict__[f'checkBoxValve{i}'].blockSignals(True)
+            self.__dict__[f'checkBoxValve{i}'].setChecked(False)
+            self.__dict__[f'checkBoxValve{i}'].blockSignals(False)
 
     def changeSR(self):
         regNum = int(self.menuShift_Register.checkedAction.text())
@@ -235,7 +240,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.getUsbPort()
 
     def closeEvent(self, event):
-        print('closing')
         self.clear()
         self.device.close()
         event.accept()

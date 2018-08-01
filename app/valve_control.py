@@ -16,23 +16,20 @@ class ValveControlBase(serial.Serial):
             except IndexError:
                 time.sleep(1)
 
-    def send(self, command):
+    def send(self, command, wait=0):
         if not isinstance(command, bytes):
             command = bytes(command, encoding='ascii')
         self.write(command)
         
         # must wait for at least 50 ms to get response from arduino
-        time.sleep(0.05)
+        time.sleep(0.01)
         
-        response = b''
-        while self.in_waiting:
-            response += self.readline()
-            
-        response = response.split(b'\r\n', 1)
-        if response[0] != command:
-            self.send(command)
-            
-        return response[1]
+        if wait:
+            time.sleep(wait)
+            response = b''
+            while self.in_waiting:
+                response += self.readline()
+            return response
 
     def setRegNum(self, n):
         """Set number of 8-bit registers. 
@@ -120,7 +117,7 @@ class ValveControlBase(serial.Serial):
 
     def stop(self):
         """Stop running cycles"""
-        res = self.send(b'\x07')
+        res = self.send(b'\x07', wait=0.2)
         cycleCompleted = int.from_bytes(res[:4], 'little')
         temp = int.from_bytes(res[4:4+self.settings['REG_NUM']], 'big')
         valveStates = []
@@ -179,7 +176,7 @@ class ValveControlBase(serial.Serial):
         Byte 4: BEFORE_PHASE_NUM
         Byte 5: AFTER_PHASE_NUM
         """
-        res = self.send(b'\x0E')[:-2]
+        res = self.send(b'\x0E', wait=0.1)[:-2]
         return {
             'EEPROM_RESET_FLAG': res[0], 
             'REG_NUM': res[1], 

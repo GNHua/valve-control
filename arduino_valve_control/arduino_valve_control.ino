@@ -390,8 +390,7 @@ uint8_t readSerialString() {
     serInStr[i] = Serial.read();   // FIXME: doesn't check buffer overrun
     i++;
   }
-  Serial.write(serInStr, i);
-  Serial.println();
+
   return i;  // return number of chars read
 } //readSerialString
 
