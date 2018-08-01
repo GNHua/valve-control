@@ -257,8 +257,8 @@
     <property name="title">
      <string>Help</string>
     </property>
-    <addaction name="actionSource_Code"/>
-    <addaction name="actionProgrammable_Cycle"/>
+    <addaction name="actionDocumentation"/>
+    <addaction name="actionUpdate"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuDevice"/>
@@ -290,9 +290,9 @@
     <string>Programmable Cycle</string>
    </property>
   </action>
-  <action name="actionSource_Code">
+  <action name="actionDocumentation">
    <property name="text">
-    <string>Source Code</string>
+    <string>Documentation</string>
    </property>
   </action>
   <action name="actionRestart_Device">
@@ -403,6 +403,11 @@
   <action name="actionReset_Output">
    <property name="text">
     <string>Reset Output</string>
+   </property>
+  </action>
+  <action name="actionUpdate">
+   <property name="text">
+    <string>Update</string>
    </property>
   </action>
  </widget>
