@@ -1,0 +1,394 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino
+LIBS:switches
+LIBS:valve_testing-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HCPL2731 U2
+U 1 1 5B4046E0
+P 3450 3950
+AR Path="/5B404644/5B4046E0" Ref="U2"  Part="1" 
+AR Path="/5B4063FE/5B4046E0" Ref="U3"  Part="1" 
+AR Path="/5B406E77/5B4046E0" Ref="U4"  Part="1" 
+AR Path="/5B406E7B/5B4046E0" Ref="U5"  Part="1" 
+F 0 "U2" H 3600 4000 50  0000 L CNN
+F 1 "HCPL2731" H 3600 3880 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 3475 3950 50  0001 C CNN
+F 3 "" H 3475 3950 50  0001 C CNN
+	1    3450 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B4047D2
+P 3350 1850
+AR Path="/5B404644/5B4047D2" Ref="R1"  Part="1" 
+AR Path="/5B4063FE/5B4047D2" Ref="R5"  Part="1" 
+AR Path="/5B406E77/5B4047D2" Ref="R9"  Part="1" 
+AR Path="/5B406E7B/5B4047D2" Ref="R13"  Part="1" 
+F 0 "R1" V 3430 1850 50  0000 C CNN
+F 1 "2.3k" V 3350 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3280 1850 50  0001 C CNN
+F 3 "" H 3350 1850 50  0001 C CNN
+	1    3350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5B404810
+P 3350 2700
+AR Path="/5B404644/5B404810" Ref="#PWR06"  Part="1" 
+AR Path="/5B4063FE/5B404810" Ref="#PWR013"  Part="1" 
+AR Path="/5B406E77/5B404810" Ref="#PWR020"  Part="1" 
+AR Path="/5B406E7B/5B404810" Ref="#PWR027"  Part="1" 
+F 0 "#PWR06" H 3350 2450 50  0001 C CNN
+F 1 "GND" H 3350 2550 50  0000 C CNN
+F 2 "" H 3350 2700 50  0001 C CNN
+F 3 "" H 3350 2700 50  0001 C CNN
+	1    3350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5B404828
+P 3550 2700
+AR Path="/5B404644/5B404828" Ref="#PWR07"  Part="1" 
+AR Path="/5B4063FE/5B404828" Ref="#PWR014"  Part="1" 
+AR Path="/5B406E77/5B404828" Ref="#PWR021"  Part="1" 
+AR Path="/5B406E7B/5B404828" Ref="#PWR028"  Part="1" 
+F 0 "#PWR07" H 3550 2450 50  0001 C CNN
+F 1 "GND" H 3550 2550 50  0000 C CNN
+F 2 "" H 3550 2700 50  0001 C CNN
+F 3 "" H 3550 2700 50  0001 C CNN
+	1    3550 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 4350 1500 2    60   Input ~ 0
+Vcc_12V
+$Comp
+L R R3
+U 1 1 5B4049D3
+P 3550 1850
+AR Path="/5B404644/5B4049D3" Ref="R3"  Part="1" 
+AR Path="/5B4063FE/5B4049D3" Ref="R7"  Part="1" 
+AR Path="/5B406E77/5B4049D3" Ref="R11"  Part="1" 
+AR Path="/5B406E7B/5B4049D3" Ref="R15"  Part="1" 
+F 0 "R3" V 3630 1850 50  0000 C CNN
+F 1 "23.k" V 3550 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3480 1850 50  0001 C CNN
+F 3 "" H 3550 1850 50  0001 C CNN
+	1    3550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5B404DC3
+P 4050 2700
+AR Path="/5B404644/5B404DC3" Ref="#PWR08"  Part="1" 
+AR Path="/5B4063FE/5B404DC3" Ref="#PWR015"  Part="1" 
+AR Path="/5B406E77/5B404DC3" Ref="#PWR022"  Part="1" 
+AR Path="/5B406E7B/5B404DC3" Ref="#PWR029"  Part="1" 
+F 0 "#PWR08" H 4050 2450 50  0001 C CNN
+F 1 "GND" H 4050 2550 50  0000 C CNN
+F 2 "" H 4050 2700 50  0001 C CNN
+F 3 "" H 4050 2700 50  0001 C CNN
+	1    4050 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2500 3550 2700
+Wire Wire Line
+	3450 1500 3450 2100
+Wire Wire Line
+	3550 2100 3550 2000
+Wire Wire Line
+	3550 1700 3550 1500
+Connection ~ 3550 1500
+Wire Wire Line
+	3350 2700 3350 2500
+Wire Wire Line
+	3350 2100 3350 2000
+Wire Wire Line
+	3550 2000 3750 2000
+Wire Wire Line
+	4050 1800 4050 1500
+Connection ~ 4050 1500
+Wire Wire Line
+	3450 1500 4350 1500
+$Comp
+L R R2
+U 1 1 5B405242
+P 3350 3500
+AR Path="/5B404644/5B405242" Ref="R2"  Part="1" 
+AR Path="/5B4063FE/5B405242" Ref="R6"  Part="1" 
+AR Path="/5B406E77/5B405242" Ref="R10"  Part="1" 
+AR Path="/5B406E7B/5B405242" Ref="R14"  Part="1" 
+F 0 "R2" V 3430 3500 50  0000 C CNN
+F 1 "2.3k" V 3350 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3280 3500 50  0001 C CNN
+F 3 "" H 3350 3500 50  0001 C CNN
+	1    3350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5B405248
+P 3350 4350
+AR Path="/5B404644/5B405248" Ref="#PWR09"  Part="1" 
+AR Path="/5B4063FE/5B405248" Ref="#PWR016"  Part="1" 
+AR Path="/5B406E77/5B405248" Ref="#PWR023"  Part="1" 
+AR Path="/5B406E7B/5B405248" Ref="#PWR030"  Part="1" 
+F 0 "#PWR09" H 3350 4100 50  0001 C CNN
+F 1 "GND" H 3350 4200 50  0000 C CNN
+F 2 "" H 3350 4350 50  0001 C CNN
+F 3 "" H 3350 4350 50  0001 C CNN
+	1    3350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5B40524E
+P 3550 4350
+AR Path="/5B404644/5B40524E" Ref="#PWR010"  Part="1" 
+AR Path="/5B4063FE/5B40524E" Ref="#PWR017"  Part="1" 
+AR Path="/5B406E77/5B40524E" Ref="#PWR024"  Part="1" 
+AR Path="/5B406E7B/5B40524E" Ref="#PWR031"  Part="1" 
+F 0 "#PWR010" H 3550 4100 50  0001 C CNN
+F 1 "GND" H 3550 4200 50  0000 C CNN
+F 2 "" H 3550 4350 50  0001 C CNN
+F 3 "" H 3550 4350 50  0001 C CNN
+	1    3550 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4350 3150 2    60   Input ~ 0
+Vcc_12V
+$Comp
+L R R4
+U 1 1 5B405255
+P 3550 3500
+AR Path="/5B404644/5B405255" Ref="R4"  Part="1" 
+AR Path="/5B4063FE/5B405255" Ref="R8"  Part="1" 
+AR Path="/5B406E77/5B405255" Ref="R12"  Part="1" 
+AR Path="/5B406E7B/5B405255" Ref="R16"  Part="1" 
+F 0 "R4" V 3630 3500 50  0000 C CNN
+F 1 "2.3k" V 3550 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3480 3500 50  0001 C CNN
+F 3 "" H 3550 3500 50  0001 C CNN
+	1    3550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 5B405267
+P 4050 4350
+AR Path="/5B404644/5B405267" Ref="#PWR011"  Part="1" 
+AR Path="/5B4063FE/5B405267" Ref="#PWR018"  Part="1" 
+AR Path="/5B406E77/5B405267" Ref="#PWR025"  Part="1" 
+AR Path="/5B406E7B/5B405267" Ref="#PWR032"  Part="1" 
+F 0 "#PWR011" H 4050 4100 50  0001 C CNN
+F 1 "GND" H 4050 4200 50  0000 C CNN
+F 2 "" H 4050 4350 50  0001 C CNN
+F 3 "" H 4050 4350 50  0001 C CNN
+	1    4050 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4150 3550 4350
+Wire Wire Line
+	3450 3150 3450 3750
+Wire Wire Line
+	3550 3750 3550 3650
+Wire Wire Line
+	3550 3350 3550 3150
+Connection ~ 3550 3150
+Wire Wire Line
+	3350 4350 3350 4150
+Wire Wire Line
+	3350 3750 3350 3650
+Wire Wire Line
+	3550 3650 3750 3650
+Wire Wire Line
+	4050 3450 4050 3150
+Connection ~ 4050 3150
+Wire Wire Line
+	3450 3150 4350 3150
+$Comp
+L HCPL2731 U2
+U 2 1 5B405304
+P 3450 2300
+AR Path="/5B404644/5B405304" Ref="U2"  Part="2" 
+AR Path="/5B4063FE/5B405304" Ref="U3"  Part="2" 
+AR Path="/5B406E77/5B405304" Ref="U4"  Part="2" 
+AR Path="/5B406E7B/5B405304" Ref="U5"  Part="2" 
+F 0 "U2" H 3600 2350 50  0000 L CNN
+F 1 "HCPL2731" H 3600 2230 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 3475 2300 50  0001 C CNN
+F 3 "" H 3475 2300 50  0001 C CNN
+	2    3450 2300
+	1    0    0    -1  
+$EndComp
+Text HLabel 3150 1500 0    60   Input ~ 0
+Input0
+Text HLabel 3150 3150 0    60   Input ~ 0
+Input1
+Wire Wire Line
+	3150 3150 3350 3150
+Wire Wire Line
+	3350 3150 3350 3350
+Wire Wire Line
+	3150 1500 3350 1500
+Wire Wire Line
+	3350 1500 3350 1700
+$Comp
+L Q_PMOS_GSD Q1
+U 1 1 5B45A157
+P 3950 2000
+AR Path="/5B404644/5B45A157" Ref="Q1"  Part="1" 
+AR Path="/5B4063FE/5B45A157" Ref="Q3"  Part="1" 
+AR Path="/5B406E77/5B45A157" Ref="Q5"  Part="1" 
+AR Path="/5B406E7B/5B45A157" Ref="Q7"  Part="1" 
+F 0 "Q1" H 4150 2050 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 4150 1950 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23W_Handsoldering" H 4150 2100 50  0001 C CNN
+F 3 "" H 3950 2000 50  0001 C CNN
+	1    3950 2000
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q2
+U 1 1 5B45A1AF
+P 3950 3650
+AR Path="/5B404644/5B45A1AF" Ref="Q2"  Part="1" 
+AR Path="/5B4063FE/5B45A1AF" Ref="Q4"  Part="1" 
+AR Path="/5B406E77/5B45A1AF" Ref="Q6"  Part="1" 
+AR Path="/5B406E7B/5B45A1AF" Ref="Q8"  Part="1" 
+F 0 "Q2" H 4150 3700 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 4150 3600 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23W_Handsoldering" H 4150 3750 50  0001 C CNN
+F 3 "" H 3950 3650 50  0001 C CNN
+	1    3950 3650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4050 3850 4050 4050
+Wire Wire Line
+	4050 4150 4050 4350
+Wire Wire Line
+	4050 2200 4050 2400
+Wire Wire Line
+	4050 2500 4050 2700
+$Comp
+L D_Schottky_x2_ACom_KKA D1
+U 1 1 5B45A4D8
+P 5900 2900
+AR Path="/5B404644/5B45A4D8" Ref="D1"  Part="1" 
+AR Path="/5B4063FE/5B45A4D8" Ref="D2"  Part="1" 
+AR Path="/5B406E77/5B45A4D8" Ref="D3"  Part="1" 
+AR Path="/5B406E7B/5B45A4D8" Ref="D4"  Part="1" 
+F 0 "D1" H 5950 2800 50  0000 C CNN
+F 1 "D_Schottky_x2_ACom_KKA" H 5900 3000 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 5900 2900 50  0001 C CNN
+F 3 "" H 5900 2900 50  0001 C CNN
+	1    5900 2900
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 5B45A5E4
+P 6100 3100
+AR Path="/5B404644/5B45A5E4" Ref="#PWR012"  Part="1" 
+AR Path="/5B4063FE/5B45A5E4" Ref="#PWR019"  Part="1" 
+AR Path="/5B406E77/5B45A5E4" Ref="#PWR026"  Part="1" 
+AR Path="/5B406E7B/5B45A5E4" Ref="#PWR033"  Part="1" 
+F 0 "#PWR012" H 6100 2850 50  0001 C CNN
+F 1 "GND" H 6100 2950 50  0000 C CNN
+F 2 "" H 6100 3100 50  0001 C CNN
+F 3 "" H 6100 3100 50  0001 C CNN
+	1    6100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2900 6100 3100
+Wire Wire Line
+	5900 3200 5900 3950
+Wire Wire Line
+	5900 3950 4050 3950
+Connection ~ 4050 3950
+Wire Wire Line
+	5900 2600 5900 2250
+Wire Wire Line
+	5900 2250 4050 2250
+Connection ~ 4050 2250
+$Comp
+L Conn_01x02 J6
+U 1 1 5B48319E
+P 4250 2400
+AR Path="/5B404644/5B48319E" Ref="J6"  Part="1" 
+AR Path="/5B4063FE/5B48319E" Ref="J8"  Part="1" 
+AR Path="/5B406E77/5B48319E" Ref="J10"  Part="1" 
+AR Path="/5B406E7B/5B48319E" Ref="J12"  Part="1" 
+F 0 "J6" H 4250 2500 50  0000 C CNN
+F 1 "Conn_01x02" H 4250 2200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 4250 2400 50  0001 C CNN
+F 3 "" H 4250 2400 50  0001 C CNN
+	1    4250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J7
+U 1 1 5B4831E4
+P 4250 4050
+AR Path="/5B404644/5B4831E4" Ref="J7"  Part="1" 
+AR Path="/5B4063FE/5B4831E4" Ref="J9"  Part="1" 
+AR Path="/5B406E77/5B4831E4" Ref="J11"  Part="1" 
+AR Path="/5B406E7B/5B4831E4" Ref="J13"  Part="1" 
+F 0 "J7" H 4250 4150 50  0000 C CNN
+F 1 "Conn_01x02" H 4250 3850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 4250 4050 50  0001 C CNN
+F 3 "" H 4250 4050 50  0001 C CNN
+	1    4250 4050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

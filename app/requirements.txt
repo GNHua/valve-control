@@ -1,0 +1,6 @@
+# PyQt5
+PyQt5==5.10.1
+sip==4.19.8
+
+# pySerial
+pyserial==3.4

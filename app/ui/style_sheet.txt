@@ -1,0 +1,29 @@
+QCheckBox {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+QCheckBox::indicator {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+QCheckBox::indicator:checked {
+    image: url(app/ui/green.png);
+}
+QCheckBox::indicator:unchecked {
+    image: url(app/ui/grey.png);
+}
+
+QPushButton#pushButtonStart {
+    width: 100px;
+    background-color: yellow;
+    margin-right: 5px;
+}
+
+QPushButton#pushButtonStop {
+    background-color: red;
+}

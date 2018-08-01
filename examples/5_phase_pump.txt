@@ -1,0 +1,14 @@
+BEFORE
+    ON 3
+    ON 2
+    ON 1
+
+CYCLE
+    OFF 1 2
+    ON 1
+    OFF 3
+    ON 2
+    ON 3
+
+AFTER
+    ON 3
