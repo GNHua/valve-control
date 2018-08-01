@@ -55,7 +55,7 @@ void fastShiftOut(char* data, uint8_t length)
   MYPORT |= (1 << latchPinBitLoc);
 }
 
-void controlValves(char* data, char* currentState, char* mask, uint8_t length)
+void controlValves(char* data, char* mask, uint8_t length)
 {
   for(uint8_t i=0; i<length; i++) {
     data[i] &= mask[i];
@@ -97,7 +97,7 @@ void start()
 // use hardware timer for interval equal to or below 200 ms
 ISR(TIMER1_COMPA_vect)  // timer compare interrupt service routine
 {
-  controlValves(operations+phase[currentPhaseIndex]*regNum, currentState, masks+phase[currentPhaseIndex]*regNum, regNum);
+  controlValves(operations+phase[currentPhaseIndex]*regNum, masks+phase[currentPhaseIndex]*regNum, regNum);
   currentPhaseIndex++;
 
   if (currentPhaseIndex >= totalPhases) {
@@ -118,7 +118,7 @@ void runLongTimer()
 {
   uint32_t currentMillis = millis(); // grab current time
   if (longTimerEnabled && (uint32_t)(currentMillis - previousMillis) >= intervalMillis) {
-    controlValves(operations+phase[currentPhaseIndex]*regNum, currentState, masks+phase[currentPhaseIndex]*regNum, regNum);
+    controlValves(operations+phase[currentPhaseIndex]*regNum, masks+phase[currentPhaseIndex]*regNum, regNum);
     currentPhaseIndex++;
     
     // save the "current" time
@@ -142,7 +142,7 @@ void runLongTimer()
 void runBeforeAfterPhase(uint8_t* phase, uint8_t length)
 {
   for(uint8_t i=0; i<length; i++) {
-    controlValves(operations+phase[i]*regNum, currentState, masks+phase[i]*regNum, regNum);
+    controlValves(operations+phase[i]*regNum, masks+phase[i]*regNum, regNum);
     delay(intervalMillis);
   }
 }
@@ -324,7 +324,7 @@ void GetSerialInput() {
       {
         // byte 1-(1+regNum): valve controls 
         // byte (1+regNum)-(1+regNum*2): mask
-        controlValves(serInStr+1, currentState, serInStr+1+regNum, regNum);
+        controlValves(serInStr+1, serInStr+1+regNum, regNum);
         break;
       }
       case 0x09: // clear shift register outputs
