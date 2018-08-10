@@ -11,10 +11,9 @@ Use Arduino Uno to control solenoid valves
 * If you choose JLCPCB, go [here](https://jlcpcb.com/quote), upload [plots.zip](pcb_layout/plots.zip), and leave everything else as default.
 * If you have access to a PCB baking oven, buying a SMT-Stencil will save you a lot of time for soldering. If not, all the components can still be soldered by hand.
 
-**Top Layer**  
-![PCB top layer](pcb_layout/top.png?raw=true "Top Layer")  
-**Bottom Layer**  
-![PCB bottom layer](pcb_layout/bottom.png?raw=true "Bottom Layer")
+| Top Layer | Bottom Layer |
+| --------- | ------------ |
+| <img src="https://github.com/GNHua/valve-control/raw/master/pcb_layout/top.png" width="400"> | <img src="https://github.com/GNHua/valve-control/raw/master/pcb_layout/bottom.png" width="400"> |
 
 ### Buy electrical components
 
