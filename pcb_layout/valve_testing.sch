@@ -72,7 +72,7 @@ F 3 "" H 6850 2200 50  0001 C CNN
 	1    6850 2200
 	1    0    0    -1  
 $EndComp
-Text GLabel 2950 4700 0    60   Input ~ 0
+Text GLabel 3150 4600 2    60   Input ~ 0
 Vcc_12V
 $Comp
 L GND #PWR01
@@ -200,6 +200,60 @@ F 3 "" H 1400 3900 50  0001 C CNN
 	1    1400 3900
 	1    0    0    -1  
 $EndComp
+Text Label 5700 2050 0    60   ~ 0
+SRCLR
+Text Label 5100 2500 2    60   ~ 0
+dataPin
+Text Label 5100 2100 2    60   ~ 0
+SRCLR
+Text Label 5100 2200 2    60   ~ 0
+clockPin
+Text Label 5100 2300 2    60   ~ 0
+latchPin
+$Comp
+L Arduino_Uno_Shield XA1
+U 1 1 5B41CD75
+P 3300 2550
+F 0 "XA1" V 3400 2550 60  0000 C CNN
+F 1 "Arduino_Uno_Shield" V 3200 2550 60  0000 C CNN
+F 2 "Arduino:Arduino_Uno_Shield" H 5100 6300 60  0001 C CNN
+F 3 "" H 5100 6300 60  0001 C CNN
+	1    3300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J5
+U 1 1 5B48333D
+P 7900 2650
+F 0 "J5" H 7900 2750 50  0000 C CNN
+F 1 "Conn_01x02" H 7900 2450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 7900 2650 50  0001 C CNN
+F 3 "" H 7900 2650 50  0001 C CNN
+	1    7900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J4
+U 1 1 5B4833B6
+P 7050 4750
+F 0 "J4" H 7050 4850 50  0000 C CNN
+F 1 "Conn_01x02" H 7050 4550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7050 4750 50  0001 C CNN
+F 3 "" H 7050 4750 50  0001 C CNN
+	1    7050 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x04 J2
+U 1 1 5B6CCCC7
+P 4300 4300
+F 0 "J2" H 4300 4500 50  0000 C CNN
+F 1 "Conn_01x04" H 4300 4000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 4300 4300 50  0001 C CNN
+F 3 "" H 4300 4300 50  0001 C CNN
+	1    4300 4300
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	7550 1750 7800 1750
 Wire Wire Line
@@ -258,31 +312,10 @@ Wire Wire Line
 	6850 4850 6500 4850
 Wire Wire Line
 	1400 3900 1400 3800
-Text Label 5700 2050 0    60   ~ 0
-SRCLR
 Wire Wire Line
 	4600 2200 5100 2200
-Text Label 5100 2500 2    60   ~ 0
-dataPin
 Wire Wire Line
 	4600 2300 5100 2300
-Text Label 5100 2100 2    60   ~ 0
-SRCLR
-Text Label 5100 2200 2    60   ~ 0
-clockPin
-Text Label 5100 2300 2    60   ~ 0
-latchPin
-$Comp
-L Arduino_Uno_Shield XA1
-U 1 1 5B41CD75
-P 3300 2550
-F 0 "XA1" V 3400 2550 60  0000 C CNN
-F 1 "Arduino_Uno_Shield" V 3200 2550 60  0000 C CNN
-F 2 "Arduino:Arduino_Uno_Shield" H 5100 6300 60  0001 C CNN
-F 3 "" H 5100 6300 60  0001 C CNN
-	1    3300 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2000 3100 2000 3300
 Connection ~ 2000 3200
@@ -294,76 +327,44 @@ Wire Wire Line
 	7700 3200 5100 3200
 Wire Wire Line
 	5100 3200 5100 2500
-$Comp
-L Conn_01x02 J1
-U 1 1 5B459E71
-P 3400 4700
-F 0 "J1" H 3400 4800 50  0000 C CNN
-F 1 "Conn_01x02" H 3400 4500 50  0000 C CNN
-F 2 "Wire_Connections_Bridges:WireConnection_2.00mmDrill" H 3400 4700 50  0001 C CNN
-F 3 "" H 3400 4700 50  0001 C CNN
-	1    3400 4700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2950 4700 3200 4700
-Wire Wire Line
-	3200 4800 2950 4800
-$Comp
-L Conn_01x02 J5
-U 1 1 5B48333D
-P 7900 2650
-F 0 "J5" H 7900 2750 50  0000 C CNN
-F 1 "Conn_01x02" H 7900 2450 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 7900 2650 50  0001 C CNN
-F 3 "" H 7900 2650 50  0001 C CNN
-	1    7900 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x02 J4
-U 1 1 5B4833B6
-P 7050 4750
-F 0 "J4" H 7050 4850 50  0000 C CNN
-F 1 "Conn_01x02" H 7050 4550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7050 4750 50  0001 C CNN
-F 3 "" H 7050 4750 50  0001 C CNN
-	1    7050 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x03 J2
-U 1 1 5B48D3ED
-P 4400 4300
-F 0 "J2" H 4400 4500 50  0000 C CNN
-F 1 "Conn_01x03" H 4400 4100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4400 4300 50  0001 C CNN
-F 3 "" H 4400 4300 50  0001 C CNN
-	1    4400 4300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Conn_01x03 J3
-U 1 1 5B48D489
-P 4400 5200
-F 0 "J3" H 4400 5400 50  0000 C CNN
-F 1 "Conn_01x03" H 4400 5000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4400 5200 50  0001 C CNN
-F 3 "" H 4400 5200 50  0001 C CNN
-	1    4400 5200
-	0    1    1    0   
-$EndComp
+	2950 4700 2950 5050
 Wire Wire Line
 	2950 4500 4500 4500
-Connection ~ 4400 4500
-Wire Wire Line
-	2950 4500 2950 4700
+Connection ~ 4200 4500
 Connection ~ 4300 4500
+Connection ~ 4400 4500
+$Comp
+L Conn_01x04 J3
+U 1 1 5B6CD2BC
+P 4300 5200
+F 0 "J3" H 4300 5400 50  0000 C CNN
+F 1 "Conn_01x04" H 4300 4900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 4300 5200 50  0001 C CNN
+F 3 "" H 4300 5200 50  0001 C CNN
+	1    4300 5200
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
 	2950 5000 4500 5000
 Connection ~ 4400 5000
-Wire Wire Line
-	2950 4800 2950 5050
 Connection ~ 4300 5000
 Connection ~ 2950 5000
+Connection ~ 4200 5000
+$Comp
+L Barrel_Jack J1
+U 1 1 5B6CD8B7
+P 2650 4700
+F 0 "J1" H 2650 4910 50  0000 C CNN
+F 1 "Barrel_Jack" H 2650 4525 50  0000 C CNN
+F 2 "Connectors:BARREL_JACK" H 2700 4660 50  0001 C CNN
+F 3 "" H 2700 4660 50  0001 C CNN
+	1    2650 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4500 2950 4600
+Wire Wire Line
+	2950 4600 3150 4600
+Connection ~ 2950 4800
 $EndSCHEMATC
