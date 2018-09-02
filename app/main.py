@@ -83,7 +83,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.actionStop.triggered.connect(self.stop)
         self.actionGroupSR.triggered.connect(self.changeSR)
         self.actionReset_Input.triggered.connect(self.serialResetInput)
-        self.actionReset_Input.triggered.connect(self.serialResetOutput)
+        self.actionReset_Output.triggered.connect(self.serialResetOutput)
         self.actionDocumentation.triggered.connect(self.openGithubRepo)
         self.actionUpdate.triggered.connect(self.update)
 
