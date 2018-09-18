@@ -169,7 +169,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if child.widget():
                 child.widget().deleteLater()
 
-        self.setRegNum(regNum)
+        self.device.setRegNum(regNum)
         regNum = self.device.settings['REG_NUM']
         for i in range(1, 8*regNum+1):
             checkBox = QtWidgets.QCheckBox(str(i))
