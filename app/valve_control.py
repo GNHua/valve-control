@@ -38,6 +38,8 @@ class ValveControlBase(serial.Serial):
         :param int n: number of registers
         """
         self.send(b'\x00' + int(n).to_bytes(1, 'little'))
+        time.sleep(1)
+        self.settings = self.getEEPROMSettings()
 
     def setTotalPhases(self, totalPhases, totalBeforePhases, totalAfterPhases):
         """Set total phases. 
