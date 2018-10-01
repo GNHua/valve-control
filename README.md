@@ -11,7 +11,7 @@ Follow the steps below to set up your own valve control station.
 * [Valve connector cable](http://www.clippard.com/products/electronic-valve-10mm-connector)
 * [Manifold](http://www.clippard.com/products/electronic-valve-10mm-manifolds)
 
-Details from page 215-221 in [Clippard Full-line Catalog](http://www.clippard.com/downloads/PDF_Documents/Clippard%20Full%20Line%20Catalog/Clippard%20Full-Line%20Catalog.pdf)
+Details can be found on page 215-221 in [Clippard Full-line Catalog](http://www.clippard.com/downloads/PDF_Documents/Clippard%20Full%20Line%20Catalog/Clippard%20Full-Line%20Catalog.pdf)
 
 ### Send [PCB design](pcb_layout/plots.zip) Out For Manufacturing
 
