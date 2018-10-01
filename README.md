@@ -25,21 +25,21 @@ Details from page 215-221 in [Clippard Full-line Catalog](http://www.clippard.co
 
 ### Electrical Components To Buy
 
-| Part | Label on PCB | Qty. (per PCB) |
-| ---- | :----------- | :------------: |
-| [Shift register, SN74HC595N](https://www.digikey.com/product-detail/en/texas-instruments/SN74HC595N/296-1600-5-ND/277246?utm_adgroup=Integrated%20Circuits&slid=&gclid=Cj0KCQjwzK_bBRDDARIsAFQF7zN5-LHxIfRLcNVY-gf6gJ_lS_RSs-WGzMVOjYGovQlShfyqFOsZDr0aAqcmEALw_wcB) | plug on the DIP socket (U1) | 1 |
-| [Optoisolator, HCPL 2731](https://www.digikey.com/product-detail/en/on-semiconductor/HCPL2731/HCPL2731QT-ND/31642) | plug on the DIP sockets (U2-U5) | 4 |
-| [Resistor, 2.32 k&Omega;, package 0805](https://www.digikey.com/product-detail/en/stackpole-electronics-inc/RMCF0805FT2K32/RMCF0805FT2K32DKR-ND/1943295) | R1-R16 | 16 |
-| [Common anode diode](https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54AT-7-F/BAT54AT-FDICT-ND/821941) | D1-D4 | 4 |
-| [PMOS](https://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/SSM3J338RLF/SSM3J338RLFCT-ND/5810258) | Q1-Q8 | 8 |
-| [1 uF capacitor, package 0805, voltage rating 10V](https://www.digikey.com/product-detail/en/yageo/CC0805KKX7R6BB105/311-1458-1-ND/2833764) | C1 | 1 |
-| [DIP socket, 2x8](https://www.digikey.com/product-detail/en/assmann-wsw-components/A-16-LC-TT/AE9992-ND/821746) | U1 | 1 |
-| [DIP socket, 2x4](https://www.digikey.com/product-detail/en/assmann-wsw-components/A-08-LC-TT/AE9986-ND/821740) | U2-U5 | 4 |
-| [Stacking headers](https://www.digikey.com/products/en?mpart=85&v=1528) | J2-J4, H1, H2 | 1 |
-| [Connector, Molex 50212-8000](https://www.digikey.com/product-detail/en/molex-llc/50212-8000/WM4561CT-ND/2524899) | N/A | 18 |
-| [Connector housing, Molex 0873690200](https://www.digikey.com/product-detail/en/molex-llc/0873690200/WM10118-ND/3264531) | N/A | 9 |
-| [JST header, Molex 0894010210](https://www.digikey.com/products/en?keywords=0894010210) | J5-J13 | 9 |
-| [2.5 mm barrel jack, 5A max, CUI PJ-057BH ](https://www.digikey.com/product-detail/en/cui-inc/PJ-057BH/CP-057BH-ND/1644602?WT.srch=1&gclid=Cj0KCQjwzK_bBRDDARIsAFQF7zMAA_lLykibpOltGBij_q3GgaALm4U1mWajtnpzEGkrmGGN8nhqwBUaAmMTEALw_wcB) | J1 | 1 for each setup |
+| Part | Label on PCB | Qty. (per PCB) | Purchase |
+| ---- | :----------- | :------------: | :------: |
+| [Shift register, SN74HC595N](https://www.digikey.com/product-detail/en/texas-instruments/SN74HC595N/296-1600-5-ND/277246?utm_adgroup=Integrated%20Circuits&slid=&gclid=Cj0KCQjwzK_bBRDDARIsAFQF7zN5-LHxIfRLcNVY-gf6gJ_lS_RSs-WGzMVOjYGovQlShfyqFOsZDr0aAqcmEALw_wcB) | plug on the DIP socket (U1) | 1 | [link](https://www.digikey.com/product-detail/en/texas-instruments/SN74HC595N/296-1600-5-ND/277246?utm_adgroup=Integrated%20Circuits&slid=&gclid=Cj0KCQjwzK_bBRDDARIsAFQF7zN5-LHxIfRLcNVY-gf6gJ_lS_RSs-WGzMVOjYGovQlShfyqFOsZDr0aAqcmEALw_wcB)
+| [Optoisolator, HCPL 2731](https://www.digikey.com/product-detail/en/on-semiconductor/HCPL2731/HCPL2731QT-ND/31642) | plug on the DIP sockets (U2-U5) | 4 | [link](https://www.digikey.com/product-detail/en/on-semiconductor/HCPL2731/HCPL2731QT-ND/31642) |
+| [Resistor, 2.32 k&Omega;, package 0805](https://www.digikey.com/product-detail/en/stackpole-electronics-inc/RMCF0805FT2K32/RMCF0805FT2K32DKR-ND/1943295) | R1-R16 | 16 | [link](https://www.digikey.com/product-detail/en/stackpole-electronics-inc/RMCF0805FT2K32/RMCF0805FT2K32DKR-ND/1943295) |
+| [Common anode diode](https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54AT-7-F/BAT54AT-FDICT-ND/821941) | D1-D4 | 4 | [link](https://www.digikey.com/product-detail/en/diodes-incorporated/BAT54AT-7-F/BAT54AT-FDICT-ND/821941) |
+| [PMOS](https://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/SSM3J338RLF/SSM3J338RLFCT-ND/5810258) | Q1-Q8 | 8 | [link](https://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/SSM3J338RLF/SSM3J338RLFCT-ND/5810258) |
+| [1 uF capacitor, package 0805, voltage rating 10V](https://www.digikey.com/product-detail/en/yageo/CC0805KKX7R6BB105/311-1458-1-ND/2833764) | C1 | 1 | [link](https://www.digikey.com/product-detail/en/yageo/CC0805KKX7R6BB105/311-1458-1-ND/2833764) |
+| [DIP socket, 2x8](https://www.digikey.com/product-detail/en/assmann-wsw-components/A-16-LC-TT/AE9992-ND/821746) | U1 | 1 | [link](https://www.digikey.com/product-detail/en/assmann-wsw-components/A-16-LC-TT/AE9992-ND/821746) |
+| [DIP socket, 2x4](https://www.digikey.com/product-detail/en/assmann-wsw-components/A-08-LC-TT/AE9986-ND/821740) | U2-U5 | 4 | [link](https://www.digikey.com/product-detail/en/assmann-wsw-components/A-08-LC-TT/AE9986-ND/821740) |
+| [Stacking headers](https://www.digikey.com/products/en?mpart=85&v=1528) | J2-J4, H1, H2 | 1 | [link](https://www.digikey.com/products/en?mpart=85&v=1528) |
+| [Connector, Molex 50212-8000](https://www.digikey.com/product-detail/en/molex-llc/50212-8000/WM4561CT-ND/2524899) | N/A | 18 | [link](https://www.digikey.com/product-detail/en/molex-llc/50212-8000/WM4561CT-ND/2524899) |
+| [Connector housing, Molex 0873690200](https://www.digikey.com/product-detail/en/molex-llc/0873690200/WM10118-ND/3264531) | N/A | 9 | [link](https://www.digikey.com/product-detail/en/molex-llc/0873690200/WM10118-ND/3264531) |
+| [JST header, Molex 0894010210](https://www.digikey.com/products/en?keywords=0894010210) | J5-J13 | 9 | [link](https://www.digikey.com/products/en?keywords=0894010210) |
+| [2.5 mm barrel jack, 5A max, CUI PJ-057BH ](https://www.digikey.com/product-detail/en/cui-inc/PJ-057BH/CP-057BH-ND/1644602?WT.srch=1&gclid=Cj0KCQjwzK_bBRDDARIsAFQF7zMAA_lLykibpOltGBij_q3GgaALm4U1mWajtnpzEGkrmGGN8nhqwBUaAmMTEALw_wcB) | J1 | 1 for each setup | [link](https://www.digikey.com/product-detail/en/cui-inc/PJ-057BH/CP-057BH-ND/1644602?WT.srch=1&gclid=Cj0KCQjwzK_bBRDDARIsAFQF7zMAA_lLykibpOltGBij_q3GgaALm4U1mWajtnpzEGkrmGGN8nhqwBUaAmMTEALw_wcB) |
 
 ## Download
 
